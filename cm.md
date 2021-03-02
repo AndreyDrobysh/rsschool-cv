@@ -27,4 +27,4 @@
   BNTU (2018 - 2020) I took the documents after the second year  
   RSS (2021 - at this moment)
 #### English language
-  My english level is A
+  My english level is A2
