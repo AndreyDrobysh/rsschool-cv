@@ -33,6 +33,7 @@ body {
 .photo {
   margin: 4px 4px;
   width: 250px;
+  height: 168px;
   border-radius: 50%;
   overflow: hidden;
 }
