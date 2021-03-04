@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  background-image: url("https://avatanplus.com/files/resources/original/575d1cffc9c1215543b94752.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cv-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 10px;
+  border: none;
+  outline: none;
+  height: 700px;
+  width: 600px;
+  background-color: white;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+  /* Header */
+.header {
+  display: flex;
+  width: 600px;
+}
+.photo {
+  margin: 4px 4px;
+  width: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.photo > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+ /* Main */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px 0 20px 0;
+}
+.target-skills {
+  width: 240px;
+  height: 170px;
+}
+.exp-edu {
+  width: 240px;
+  height: 170px;
+}
+.english-code {
+  width: 240px;
+  height: 140px;
+}
+
+/* Footer */
+.footer {
+  text-decoration: underline;
+}
+h1 {
+  margin-bottom: -10px;
+}
+h2 {
+  margin-bottom: 3px;
+}
