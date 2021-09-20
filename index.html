@@ -1,70 +1,107 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>CV</title>
   </head>
   <body>
     <div class="cv">
       <div class="cv-container">
+
+        <div class="burger_menu">
+          <div class="btn_menu">
+            <div class="line_menu"></div>
+          </div>
+        </div>
+        <nav class="nav">
+          <p><a class="nav_link" href="#target">Target</a></p>
+          <p><a class="nav_link" href="#skills">Skills</a></p>
+          <p><a class="nav_link" href="#english">English</a></p>
+          <p><a class="nav_link" href="#code">Code</a></p>
+          <p><a class="nav_link" href="#experience">Experience</a></p>
+          <p><a class="nav_link" href="#education">Education</a></p>
+          <p><a class="nav_link" href="#project">Project</a></p>
+        </nav>
+
         <header class="header">
           <figure class="photo">
-            <img src="https://png.pngtree.com/png-vector/20190115/ourlarge/pngtree-avatar-male-icon-design-vector-png-image_316040.jpg" alt="avatarka">
+            <img class="photo_img" src="./My_photo.jpg" alt="avatarka">
           </figure>
           <div class="name">
             <h1>Andrey Drobysh</h1>
-              <h2>Contact:</h2>
+              <h2>Contact:</h2> 
               <ul>
-                <li>phone number: +375447227279</li>
-                <li>email: andrey.drobysh.04@gmail.com</li>
-                <li>adress: Belarus, Minsk</li>
+                <li><span>phone number: +375447227279</span></li>
+                <li><span>email: andrey.drobysh.04@gmail.com</span></li>
+                <li><span>adress: Belarus, Minsk</span></li>
               </ul>
           </div>
         </header>
 
         <main class="section">
           <section class="target-skills">
-              <h2>Target: </h2>
-                Improve Frontend developer skills. Have experience working in a team. Have production experience.
-              <h2>Skills </h2>
+            <div class="target">
+              <h2 id="target">Target: </h2>
+                <p class="text">Improve Frontend developer skills. Have experience working in a team. Have production experience.</p>
+            </div>    
+            <div class="skills">
+              <h2 id="skills">Skills: </h2>
                 <ul>
                   <li>Basic JavaScript skills</li>
                   <li>Basic HTML skills</li>
                   <li>Basic CSS skills</li>
                 </ul>
+            </div>
           </section>
           <section class="english-code">
-          <h2>English language</h2>
-            My english level is A2.
-            <h2>Some code:)</h2>
-            <code>
-              function squareDigits(num){<br>
-                let str = String(num)<br>
-                let x;<br>
-                let a = '';<br>
-                for (let i = 0; i &lt; str.length; i++) {<br>
-                  x = +str[i];<br>
-                  a += `${x**2}`;<br>
-                }<br>
-              return +a;<br>
-              }<br>
-            </code>
+            <div class="english">
+              <h2 id="english">English language</h2>
+                <p class="text">My english level is A2.</p>
+            </div>
+            <div class="code_wrapper">
+              <h2 id="code">Some code:)</h2>
+              <code class="code">
+                <span class="text">
+                  function squareDigits(num){<br>
+                    let str = String(num)<br>
+                    let x;<br>
+                    let a = '';<br>
+                    for (let i = 0; i &lt; str.length; i++) {<br>
+                      x = +str[i];<br>
+                      a += `${x**2}`;<br>
+                    }<br>
+                  return +a;<br>
+                  }<br>
+                </span>
+              </code>
+            </div>
           </section>
           <section class="exp-edu">
-            <h2>Experience</h2>
-              Taxi driver.
-              Seller at hypermarket ProStore.
-            <h2>Education</h2>
-              BNTU (2018 - 2020) I took the documents after the second year.
-              RSS (2021 - at this moment).
+            <div class="experience">
+              <h2  id="experience">Experience</h2>
+                <p class="text">Finish Rolling Scopes School stage 0;</p>
+            </div>
+            <div class="education">
+              <h2  id="education">Education</h2>
+                <p class="text edu_text">BNTU (2018 - 2020) I took the documents after the second year.</p>
+                <span class="text">RSS (2021 - at this moment).</span>
+            </div>
           </section>
-        </main>
+          <section class="project">
+            <h2 id="project">Project</h2>
+            <a class="custom_player" href="https://rolling-scopes-school.github.io/andreydrobysh-JSFEPRESCHOOL/CustomPlayer/">Castom Video Player</a><br>
+            <span class="text">Created a working video control panel and added hotkeys</span>
+          </section>
+        </main>                             
 
-        <footer>
+        <footer> 
+          <hr class="footer_line">
             © 2021–2021 Andrey, for all questions write to: <span class="footer">andrey.drobysh.04@gmail.com</span>
         </footer>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
