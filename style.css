@@ -1,0 +1,234 @@
+html {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-image: url("https://avatanplus.com/files/resources/original/575d1cffc9c1215543b94752.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cv-container {
+  margin: 20px;
+  max-width: 780px;
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+
+/* Burger Menu */
+.burger_menu {
+  z-index: 9999;
+  display: none;
+  position: fixed;
+  right: 35px;
+  top: 15px;
+  width: 30px;
+  height: 25px;
+}
+.burger_menu:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn_menu {
+  position: relative;
+  height: 20px;
+  width: 30px;
+  /* background-color: blue; */
+}
+
+.line_menu {
+  content: "";
+  background-color: black;
+  border-radius: 50px;
+
+  position: absolute;
+  left: 0;
+  top: 8px;
+
+  width: 100%;
+  height: 4px;
+
+  transition: all 0.3;
+}
+
+.btn_menu::after,
+.btn_menu::before {
+  content: "";
+  background-color: black;
+  border-radius: 50px;
+
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+
+  transition: all 0.3s;
+} 
+.btn_menu::before {
+  top: 0;
+}
+.btn_menu::after {
+  bottom: 0;
+}
+
+.active::after,
+.active::before {
+  content: "";
+  background-color: white;
+  border-radius: 50px;
+  /* transform: rotate(45deg); */
+
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+} 
+.active:hover::after,
+.active:hover::before {
+  background-color: grey;
+}
+.active::before {
+  transform: rotate(50deg);
+  top: 8px;
+}
+.active::after {
+  transform: rotate(-50deg);
+  bottom: 8px;
+}
+.active_line {
+  transform: scale(0);
+}
+
+
+
+/* Nav */
+.nav {
+  width: 120px;
+  height: 100;
+
+  display: none;
+  position: fixed;
+  right: 25px;
+  top: 5px;
+
+  color: white;
+
+
+  background: black;
+  opacity: 0.9;
+  
+}
+
+.nav_link {
+  margin: 8px 10px;
+  color: white;
+  text-decoration: none;
+  
+}
+
+.nav_link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: grey;
+}
+
+
+
+/* Header */
+.header {
+  display: flex;
+}
+.photo {
+  margin: 0 25px 0 0;
+}
+.photo_img {
+  max-width: 190px;
+  width: 100%;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+
+/* Main */
+.text {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.edu_text {
+  margin-bottom: 0;
+}
+
+.target, 
+.english,
+.experience,
+.project {
+  background-color: rgb(218, 218, 218);
+}
+
+.custom_player:hover {
+  text-transform: 2;
+}
+
+/* Footer */
+.footer {
+  text-decoration: underline;
+}
+.footer_line {
+  margin-top: 20px;
+}
+h1 {
+  margin-bottom: 0px;
+}
+h2 {
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 640px) {
+  .cv-container {
+    margin-top: 0;
+  }
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .name {
+    font-size: 14px;
+    max-width: 600px;
+    width: 100%;
+  }
+  .burger_menu {
+    display: block;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 320px;
+  }
+}
